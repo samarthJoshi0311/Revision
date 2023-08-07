@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title> Register Form </title>
+</head>
+<body>
+  <table border="2">
+      <form method="post" action="Example.html">
+
+      
+       Name: <input type="text" required pattern="[a-z,A-Z]{2,5}" title="min 2 and max 5 letters....!"><br></br>
+        Email: <input type="email" placeholder="Enter Email..."><br></br>
+        Mobile: <input type="text" required="[0-9]{10}" title="Only 10 digits...!"><br></br>
+        Password: <input type="password" maxlength="8" name="Sam"><br></br>
+        Color: <input type="color"><br></br>
+      Select Country:
+      <select>
+        <option hidden>---Select Country----</option>
+        <option> India </option>
+        <option> USA </option>
+        <option> Canada </option>
+      </select>  
+
+      <br></br>
+
+      Range: <input type="range"><br></br>
+
+      Gender:
+
+      <input type="radio" name="Unknown"> Male
+      <input type="radio" name="Unknown"> Female
+
+      <br></br>
+
+      Languages:
+
+      <input type="checkbox"> Guarati
+      <input type="checkbox"> English
+      <input type="checkbox"> Hindi
+      <input type="checkbox"> Tamil
+      <input type="checkbox"> Marathi
+
+      <br></br>
+
+    Date: <input type="date"><br></br>
+    B'Date <input type="datetime-local"><br></br>
+    
+    Quantity: <input type="number" max="5" min="1"><br></br>
+
+    Upload File: <input type="file" multiple><br></br>
+
+    <input type="submit" value="Register">
+    <input type="reset" value="Reject">
+  </table>
+</form>
+</body>
+</html>

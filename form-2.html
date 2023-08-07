@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=tableta, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <form >
+            <tr>
+                <td align="right">job title:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td align="right">Description:</td>    
+                <td><textarea rows="3" cols="15" name="Description"></textarea>
+                    <p>Brief Description should have atmost 500 characters</p></td>  
+             </tr>
+            <tr>
+              <td>Company Name:</td>
+              <td>
+                <input type="text" name="Company name">
+              </td>
+            </tr>
+            <tr>
+                <td>Contact Number:</td>
+                <td>
+                  <input type="text" pattern="[0-9]{10}">
+                </td>
+              </tr>
+              <tr>
+                <td>Contact Person:</td>
+                <td>
+                  <input type="text" pattern="[0-9]{10}" length="10">
+                </td>
+              </tr>
+              <tr>
+                <td align="right">Email</td>
+                <td>
+                  <input type="Email" placeholder="Enter email">
+                </td>
+              </tr>
+              <tr>
+                <td align="right">
+                    work Status:
+                </td>
+                <td>
+                    <input type="checkbox"> Full Time
+                    <input type="checkbox"> Past Time
+                    <input type="checkbox"> Per Dim
+                    <input type="checkbox"> Others
+                </td>
+              </tr>
+              <tr>
+                <td align="right">
+                    Salary:
+                </td>
+                <td> <input type="number">
+                    <select>
+                        <option selected> US Dollar </option>
+                    </select>
+                    <select>
+                        <option selected> Yearly </option>
+                    </select>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    Experience(years)
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+              </tr>
+              <tr>
+                <td align="right">
+                    Location:
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+              </tr>
+              <tr>
+                <td align="right">
+                    Qualifications:
+                </td>
+                <td >
+                    <select name="drop1" size="4" id="Qualifiation" multiple="multiple">    
+                        <option value="1">Any</option>    
+                        <option value="2">High School</option>    
+                        <option value="3">Associate</option>    
+                        <option value="4">Pre Bachelors</option>    
+                        <option value="5">Bachelors</option>    
+                        </select>
+                        <input type="button" value="ADD>>"><input type="button" value="<<Remove">    
+        <select name="drop2" id="SelectedQualifiation" size="4" multiple="multiple">    
+        <option value="4">Pre Bachelors</option>    
+        </select><br>          
+                </td>
+              </tr>
+              <tr>
+                <td align="right">
+                    <input type="submit" value="Submit">
+                </td>
+                <td>    
+                    <input type="reset" value="Reset">
+                </td>
+              </tr>
+        </form>
+    </table>
+</body>
+</html>
